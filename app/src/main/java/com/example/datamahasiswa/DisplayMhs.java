@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,9 +18,9 @@ public class DisplayMhs extends AppCompatActivity {
     int from_Where_I_Am_Coming = 0;
     private DBHelper mydb;
 
-    TextView nomhs;
-    TextView phone;
-    TextView nama;
+    EditText nomhs;
+    EditText phone;
+    EditText nama;
 
     int id_To_Update = 0;
 
@@ -28,9 +29,9 @@ public class DisplayMhs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_mhs);
-        nomhs = (TextView) findViewById(R.id.editTextNim);
-        nama = (TextView) findViewById(R.id.editTextName);
-        phone = (TextView) findViewById(R.id.editTextPhone);
+        nomhs = (EditText) findViewById(R.id.editTextNim);
+        nama = (EditText) findViewById(R.id.editTextName);
+        phone = (EditText) findViewById(R.id.editTextPhone);
 
         Button b = (Button) findViewById(R.id.button1);
 
@@ -100,3 +101,4 @@ public class DisplayMhs extends AppCompatActivity {
         }
         return true;
     }
+}
